@@ -1,12 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from sample.model.corpus import Corpus
 import requests
 from bs4 import BeautifulSoup
 from sample.model import db_session
 from sample.model.corpus import Corpus
 
-# print(soup)
 i = 1
 corpus = Corpus.query.order_by(Corpus.id.desc()).first()
 if corpus:
@@ -50,5 +48,3 @@ for num in range(3920):
         if _class[0] == 'time':
             i = 1
             times += 1
-
-
