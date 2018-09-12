@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 import requests
 from bs4 import BeautifulSoup
-from sample.model import db_session
-from sample.model.corpus import Corpus
+from web_core.model import db_session
+from web_core.model.corpus import Corpus
 
 i = 1
 corpus = Corpus.query.order_by(Corpus.id.desc()).first()

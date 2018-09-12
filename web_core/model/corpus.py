@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from sample.model import Base, timestamp_mixin
+from web_core.model import Base, timestamp_mixin
 from sqlalchemy import Column, Integer, String, Text
 
 
