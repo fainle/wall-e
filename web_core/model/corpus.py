@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from web_core.model import Base, timestamp_mixin
+from web_core.model import db, timestamp_mixin
 from sqlalchemy import Column, Integer, String, Text
 
 
-class Corpus(Base):
+class Corpus(db.Model):
     __tablename__ = 'corpus'
 
     id = Column(Integer, primary_key=True)

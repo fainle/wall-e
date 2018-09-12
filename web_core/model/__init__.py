@@ -1,14 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from flask import Flask
+
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import DateTime, Column, func
-
-app = Flask(__name__)
-app.config.from_object('config.DevelopmentConfig')
+from web_core import app
 
 db = SQLAlchemy(app)
-Base = db.Model
 db_session = db.session
 
 
