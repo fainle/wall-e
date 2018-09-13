@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import os
+
 from flask import Flask
 
 
@@ -17,6 +18,3 @@ def create_app():
     )
 
     return app
-
-
-app = create_app()
