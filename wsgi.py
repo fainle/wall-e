@@ -4,7 +4,6 @@ import click
 from web_core import create_app
 from flask.cli import AppGroup
 
-
 app = create_app()
 user_cli = AppGroup('user')
 
