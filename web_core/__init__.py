@@ -17,7 +17,4 @@ def create_app():
         SQLALCHEMY_TRACK_MODIFICATIONS=True,
     )
 
-    from web_core.im.views import im_bp
-    app.register_blueprint(im_bp)
-
     return app

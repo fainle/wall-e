@@ -3,9 +3,12 @@
 import click
 from web_core import create_app
 from flask.cli import AppGroup
+from web_core.im.views import im_bp
+
 
 app = create_app()
 user_cli = AppGroup('user')
+app.register_blueprint(im_bp)
 
 
 @user_cli.command('create')
